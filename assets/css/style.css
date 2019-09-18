@@ -7,6 +7,10 @@
   font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 }
 
+body {
+  background-image: url("../images/background-ripples.png");
+}
+
 header {
   overflow: auto;
   border-bottom: 1px solid #cccccc;
@@ -51,11 +55,15 @@ h1 {
 .navbar a {
   display: block;
   float: right;
-  background-color: #17b0cf;
-  border-right: 1px solid #000;
   text-decoration: none;
   text-align: center;
   padding: 0px 20px 0px 20px;
+  margin: 29.15px 0px 29.15px 0px;
+}
+
+.portfolio-link,
+.about-me-link {
+  border-right: 1px solid #ccc;
 }
 
 h1,
