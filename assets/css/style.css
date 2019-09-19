@@ -126,13 +126,15 @@ footer > p {
 
 .project-row > a {
   display: inline-block;
+  height: 250px;
   position: relative;
   margin-right: 20px;
+  transition: transform 150ms, box-shadow 200ms;
 }
 
 .project-row > a:hover {
-  opacity: 0.67;
   transform: scale(1.05);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.67);
 }
 
 .project > a:hover {
