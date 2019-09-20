@@ -109,6 +109,7 @@ footer {
   background-color: #666666;
   border-top: 6px solid #4aaaa5;
   padding-top: 40px;
+  z-index: 100;
 }
 
 footer > p {
@@ -132,13 +133,10 @@ footer > p {
   transition: transform 150ms, box-shadow 200ms;
 }
 
-.project-row > a:hover {
+.project-row > a:hover,
+.project-row > a:focus {
   transform: scale(1.05);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.67);
-}
-
-.project > a:hover {
-  opacity: 0.67;
 }
 
 .project-row:first-child {
@@ -169,8 +167,10 @@ footer > p {
   transition: backdrop-filter 150ms;
 }
 
-.project-row a:hover:after {
+.project-row a:hover:after,
+.project-row a:focus:after {
   backdrop-filter: blur(0px);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 /* Styling specifically for Contact page below */
