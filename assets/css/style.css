@@ -154,6 +154,23 @@ footer > p {
   background-color: #4aaaa5;
   padding: 10px 0;
   color: #dddddd;
+  z-index: 1;
+}
+
+.project-row a::after {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2px);
+  transition: backdrop-filter 150ms;
+}
+
+.project-row a:hover:after {
+  backdrop-filter: blur(0px);
 }
 
 /* Styling specifically for Contact page below */
