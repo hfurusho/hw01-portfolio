@@ -66,7 +66,8 @@ h1 {
   margin: 29.15px 0px 29.15px 0px;
 }
 
-.navbar > a:hover {
+.navbar > a:hover,
+.navbar > a:focus {
   color: #4aaaa5;
 }
 
@@ -167,8 +168,8 @@ footer > p {
   transition: backdrop-filter 150ms;
 }
 
-.project-row a:hover:after,
-.project-row a:focus:after {
+.project-row a:hover::after,
+.project-row a:focus::after {
   backdrop-filter: blur(0px);
   background-color: rgba(255, 255, 255, 0);
 }
