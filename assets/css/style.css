@@ -97,6 +97,10 @@ h2 {
   line-height: 2rem;
 }
 
+.main-content > p + p {
+  margin-top: 1.5rem;
+}
+
 .my-pic {
   float: left;
   margin-right: 1rem;
